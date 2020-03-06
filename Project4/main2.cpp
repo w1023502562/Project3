@@ -5,7 +5,7 @@ using namespace cv;
 using namespace std;
 int main()
 {
-	cv::Mat dispMat = imread("1.png");
+	cv::Mat dispMat = imread("D:\\Õº∆¨1.png");
 	cv::Point pt, pt1, pt2;//∂®“Âµ„
 	cv::Rect rect;
 	pt.x = 100;
@@ -22,7 +22,7 @@ int main()
 	circle(dispMat, pt, 5, CV_RGB(255, 0, 0), 4, 8, 0);
 	line(dispMat, pt1, pt2, CV_RGB(255, 0, 0));
 	rectangle(dispMat, rect, CV_RGB(0, 0, 255), 4, 8, 0);
-	cv::imshow("D:\\Õº∆¨1.png");
+	cv::imshow("Mat3", dispMat);
 	waitKey(0);
 	return 0;
 }
